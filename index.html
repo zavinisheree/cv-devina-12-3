@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Devina Rasty Ananta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pastel-pink: #ffd1dc;
+            --pastel-blue: #b3e5fc;
+            --pastel-purple: #e1bee7;
+            --pastel-yellow: #fff9c4;
+            --text-dark: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fdf6f9;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            border-color: var(--pastel-pink);
+        }
+
+        .skill-tag {
+            background: var(--pastel-blue);
+            padding: 5px 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .timeline-item {
+            border-left: 3px dashed var(--pastel-pink);
+            padding-left: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '🌸';
+            position: absolute;
+            left: -13px;
+            top: 0;
+            background: #fdf6f9;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-img-container::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 3px solid var(--pastel-purple);
+            border-radius: 50%;
+            z-index: -1;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .blob {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="pt-20 pb-10">
+
+    <!-- Blobs Dekorasi -->
+    <div class="blob top-20 left-10 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+    <div class="blob top-40 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-2xl font-bold text-pink-400">Devina.</span>
+            <div class="space-x-6 hidden md:block">
+                <a href="#about" class="hover:text-pink-500 font-medium">Tentang</a>
+                <a href="#education" class="hover:text-pink-500 font-medium">Pendidikan</a>
+                <a href="#skills" class="hover:text-pink-500 font-medium">Keahlian</a>
+                <a href="#contact" class="hover:text-pink-500 font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 max-w-4xl">
+        
+        <!-- Header Section -->
+        <section class="text-center py-10">
+            <div class="profile-img-container mb-6">
+                <img src="Gemini_Generated_Image_xpj7lnxpj7lnxpj7.jpg" alt="Devina Rasty Ananta" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-white">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 floating">Devina Rasty Ananta</h1>
+            <p class="text-xl text-pink-500 font-medium mb-4">Pelajar & Content Creator</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://instagram.com/devinarasty" target="_blank" class="text-2xl text-pink-400 hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:devinarastyananta@gmail.com" class="text-2xl text-blue-400 hover:text-blue-600 transition"><i class="far fa-envelope"></i></a>
+                <a href="tel:088229495229" class="text-2xl text-green-400 hover:text-green-600 transition"><i class="fas fa-phone"></i></a>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="mb-12">
+            <div class="card p-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="mr-3 text-pink-400 text-3xl">✨</span> Tentang Saya
+                </h2>
+                <p class="leading-relaxed text-lg">
+                    Saya adalah individu yang disiplin, bertanggung jawab, dan mampu bekerja baik secara mandiri maupun dalam tim. Memiliki semangat belajar tinggi serta berkomitmen untuk memberikan hasil kerja terbaik di setiap tugas yang diberikan.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Left Column: Education -->
+            <section id="education">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="mr-3 text-blue-400 text-3xl">🎓</span> Pendidikan
+                </h2>
+                <div class="timeline-item">
+                    <h3 class="font-bold text-lg">SMA Karya Pembangunan Baleendah</h3>
+                    <p class="text-sm text-gray-500">2023 - 2026 (Sekarang)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="font-bold text-lg">SMPN Assubkiyah</h3>
+                    <p class="text-sm text-gray-500">2020 - 2023</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="font-bold text-lg">SDN Cimuncang</h3>
+                    <p class="text-sm text-gray-500">2013 - 2019</p>
+                </div>
+            </section>
+
+            <!-- Right Column: Skills & Others -->
+            <section>
+                <div id="skills" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="mr-3 text-purple-400 text-3xl">🎨</span> Keahlian
+                    </h2>
+                    <div class="flex flex-wrap">
+                        <span class="skill-tag" style="background: var(--pastel-pink);">Manajemen Waktu</span>
+                        <span class="skill-tag" style="background: var(--pastel-blue);">Public Speaking</span>
+                        <span class="skill-tag" style="background: var(--pastel-purple);">Konten Kreator</span>
+                        <span class="skill-tag" style="background: var(--pastel-yellow);">Masak-masak 🍳</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="mr-3 text-yellow-500 text-3xl">🤝</span> Organisasi
+                    </h2>
+                    <div class="card p-4 text-sm">
+                        <p class="mb-2"><strong>OSIS:</strong> Aktif dalam kegiatan kesiswaan sekolah.</p>
+                        <p><strong>Organisasi Masyarakat:</strong> Berpartisipasi dalam berbagai kegiatan sosial di lingkungan sekitar.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <div class="card p-6 text-center">
+                <div class="text-3xl mb-2">📜</div>
+                <h3 class="font-bold mb-1">Sertifikat</h3>
+                <p class="text-sm">Mengaji Kitab</p>
+            </div>
+            <div class="card p-6 text-center">
+                <div class="text-3xl mb-2">🗣️</div>
+                <h3 class="font-bold mb-1">Bahasa</h3>
+                <p class="text-sm">Indonesia, Inggris, Sunda</p>
+            </div>
+            <div class="card p-6 text-center">
+                <div class="text-3xl mb-2">🍰</div>
+                <h3 class="font-bold mb-1">Hobby</h3>
+                <p class="text-sm">Memasak Kuliner</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mt-16 text-center">
+            <h2 class="text-3xl font-bold mb-8">Hubungi Saya! 👋</h2>
+            <div class="card p-8 bg-gradient-to-r from-pink-50 to-blue-50 border-none inline-block w-full max-w-lg">
+                <div class="space-y-4 text-left">
+                    <div class="flex items-center p-3 bg-white rounded-xl shadow-sm">
+                        <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 mr-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">Alamat</p>
+                            <p class="font-semibold">Baleendah, Bandung</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 bg-white rounded-xl shadow-sm">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">Nomor HP</p>
+                            <p class="font-semibold">088229495229</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 bg-white rounded-xl shadow-sm">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-500 mr-4">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">Email</p>
+                            <p class="font-semibold">devinarastyananta@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-20 text-center text-gray-400 text-sm">
+            <p>Dibuat dengan ❤️ untuk Devina Rasty Ananta</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Animasi sederhana saat scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section, .card').forEach((el) => {
+            el.classList.add('transition', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
